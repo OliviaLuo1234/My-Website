@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" style="color: black;">Bunnies</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h1 style="color:mediumslateblue;">About Me</h1>
+    <h2 id="welcome">Hello, welcome to my website!</h2>
+    <p style="color:mediumslateblue;">My name is Olivia and I am ten years old and I am from New Jersey. I play tennis, violin, piano, swim in a team, draw, sing, and I code. I am going to fifth grade and my favorite subject is history. My favorite color is purple and my favorite foods are ramen, ice cream, and steak. I like to read fantasy, sci-fi, and realistic fiction. I also like to read comic books.</p>
+    <label for="name">What's your name? </label>
+    <input type="text" id = "name" name="name" />
+    <button id="button">Confirm</button>
+  
+      
+    
+    <script>
+        let button = document.getElementById("button");
+        button.onclick = () => {
+            let nameInput = document.getElementById("name");
+            let name = nameInput.value;
+            let welcomeMessage = document.getElementById("welcome");
+            welcomeMessage.innerHTML = "Hello, " + name + ". Welcome to my website!"
+            localStorage.setItem("name", name);
+            
+        }
+
+        window.onload = () => {
+            if (localStorage.getItem("name") != null) {
+                let welcomeMessage = document.getElementById("welcome");
+                welcomeMessage.innerHTML = "Hello " + localStorage.getItem("name") + ", welcome to my website!";
+            }
+            
+        }
+
+    </script>
+
+    <img src="https://thumb.ac-illust.com/48/487fc55156484e15fed4cdef96f263f5_t.jpeg" />
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=0c82678490&attid=0.1&permmsgid=msg-f:1775117912062959437&th=18a27c5606f21f4d&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9wjVR8BcexoHVOwBvrt5SPs_uSPs_CaDaTh5eGOddgBsVp82MJfBH5mMDXdwfzKbrh-2jhZbDWSL82HTUgca5OXZX1x8PtS9RzVw2HkFkmZ5arjPp_WhAaZJs&disp=emb&realattid=18a27c524d880a63d181"/>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
